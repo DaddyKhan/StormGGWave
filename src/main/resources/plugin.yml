@@ -1,0 +1,7 @@
+name: StormGGWave
+version: ${project.version}
+main: me.frost.ggwave.GGWave
+authors: [ frost ]
+commands:
+  ggwave:
+    description: "The main command for StormGGWave"
