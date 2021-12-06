@@ -28,6 +28,9 @@ public class WaveManager {
     }
 
     public void stopWave() {
+        if (!waveStarted) {
+            return;
+        }
         waveStarted = false;
         MessageUtils.getInstance().broadcastMessageList(plugin.getConfig().getStringList("messages.WAVE-END"));
     }
