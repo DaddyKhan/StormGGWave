@@ -12,7 +12,7 @@ public class PlayerChatListener implements Listener {
         if (!WaveManager.getInstance().hasWaveStarted()) {
             return;
         }
-        if (!event.getMessage().startsWith("gg")) {
+        if (!event.getMessage().toLowerCase().startsWith("gg")) {
             return;
         }
         event.setMessage(WaveManager.getInstance().getRandomType());
